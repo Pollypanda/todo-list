@@ -1,0 +1,185 @@
+body {
+  background: #aacbe9; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.div {
+  text-align: center;
+  background-color: #c8f4ff;
+  border-radius: 18px;
+  border-width: 3px;
+  border-style: solid;
+  
+  width: 50%;
+  margin: 0 auto;
+  padding: 25px;  
+  height: 70%;
+  border-color: #f48fb1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  overflow-y: scroll;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 span {
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 18px;
+  border-style: solid;
+  border-color: #f38ada;
+  border-width: 2px;
+  width: 60%;
+  font-size: medium; 
+  font-family: monospace;
+}
+
+.addBtn {
+  border-radius: 18px;
+  border-style: none;
+  padding: 15px;
+  background: #af54d6;
+  color: white;
+  font-weight: bold; 
+}
+
+.addBtn:hover {
+  cursor: pointer;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  padding: 12px 8px 12px 40px;
+  /* background: rgb(134, 217, 239); */
+  background: #FAAFBE;
+  font-size: 20px;
+  transition: 0.2s;
+  border-radius: 4px; 
+  margin-top: 3px;
+  font-family: monospace;
+}
+
+ul li:nth-child(odd) {
+  background: #FFDFDD;
+}
+
+ul li:hover {
+  /* background: rgb(168, 187, 83); */
+  background: #B93B8F;
+}
+
+ul li.checked {
+    background: rgb(177, 176, 176);
+    color: rgb(242, 89, 89);
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: rgb(243, 9, 9);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+ul li .BtnDelete {
+  float: right;
+  border: none;
+  background: none;
+}
+
+.BtnDelete:hover {
+  cursor: pointer;
+}
+
+.gg-trash {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 10px;
+  height: 12px;
+  border: 2px solid transparent;
+  box-shadow:
+      0 0 0 2px,
+      inset -2px 0 0,
+      inset 2px 0 0;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  margin-top: 4px
+}
+
+.gg-trash::after,
+.gg-trash::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+
+.gg-trash::after {
+    background: currentColor;
+    border-radius: 3px;
+    width: 16px;
+    height: 2px;
+    top: -4px;
+    left: -5px
+}
+.gg-trash::before {
+    width: 10px;
+    height: 4px;
+    border: 2px solid;
+    border-bottom: transparent;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    top: -7px;
+    left: -2px
+}
+
+footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: lightskyblue;
+  text-align: center;
+}
+
